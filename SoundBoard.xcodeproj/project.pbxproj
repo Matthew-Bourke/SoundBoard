@@ -15,6 +15,7 @@
 		C92A24651F490A1800914984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92A24631F490A1800914984 /* LaunchScreen.storyboard */; };
 		C92A24701F490A1800914984 /* SoundBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A246F1F490A1800914984 /* SoundBoardTests.swift */; };
 		C92A247B1F490A1800914984 /* SoundBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A247A1F490A1800914984 /* SoundBoardUITests.swift */; };
+		C92A24891F490FD900914984 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A24881F490FD900914984 /* RecordingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C92A24761F490A1800914984 /* SoundBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92A247A1F490A1800914984 /* SoundBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoardUITests.swift; sourceTree = "<group>"; };
 		C92A247C1F490A1800914984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C92A24881F490FD900914984 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				C92A24571F490A1800914984 /* AppDelegate.swift */,
 				C92A24591F490A1800914984 /* ViewController.swift */,
+				C92A24881F490FD900914984 /* RecordingViewController.swift */,
 				C92A245B1F490A1800914984 /* Main.storyboard */,
 				C92A24611F490A1800914984 /* Assets.xcassets */,
 				C92A24631F490A1800914984 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92A24891F490FD900914984 /* RecordingViewController.swift in Sources */,
 				C92A24601F490A1800914984 /* SoundBoard.xcdatamodeld in Sources */,
 				C92A245A1F490A1800914984 /* ViewController.swift in Sources */,
 				C92A24581F490A1800914984 /* AppDelegate.swift in Sources */,
