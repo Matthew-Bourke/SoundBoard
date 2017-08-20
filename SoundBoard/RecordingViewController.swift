@@ -30,6 +30,7 @@ class RecordingViewController: UIViewController {
         setupRecorder()
         
         playButton.isEnabled = false
+        addButton.isEnabled = false
     }
     
     func setupRecorder() {
@@ -71,8 +72,9 @@ class RecordingViewController: UIViewController {
             // Change button title to 'record'
             recordButton.setTitle("Record", for: .normal)
             
-            // Reenable play button
+            // Reenable play and add buttons
             playButton.isEnabled = true
+            addButton.isEnabled = true
             
         } else {
             // Start the recording
@@ -95,6 +97,19 @@ class RecordingViewController: UIViewController {
     
     
     @IBAction func addTapped(_ sender: Any) {
+        // This is where the CoreData stuff starts
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let sound = Sound(context: context)
+        
+        sound.name = nameTF.text
+        sound.audio = NSData(contentsOf: audioURL!)
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        // End of core data stuff
+        // Seems like its just default code to memorise //
+        
+        navigationController!.popViewController(animated: true)
     }
     
     
